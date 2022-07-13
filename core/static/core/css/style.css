@@ -1,0 +1,52 @@
+
+
+.fondos{
+    background-color: #f2f2f2;
+    border: 1px;
+    border-radius: 5px;
+}
+
+h3{
+    font-family: Adobe Caslon Pro;
+    color: rgb(47, 47, 47);
+
+}
+
+.icono-medio{
+    padding: 100px;
+    color: #a9a9a9;
+
+    text-align: center;
+}
+
+article{
+    background-color: #f2f2f2;
+    border: 1px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 7px;
+}
+
+aside{
+    background-color: #f2f2f2;
+    border: 1px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 7px;
+}
+
+.pagina-footer{
+    color: white;
+    background-color:rgb(47, 47, 47);
+    padding: 5px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-copyright{
+    padding: 5px;
+    background-color:rgb(39, 39, 39);
+    text-align: center;
+    color: white;
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/locales.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+
+    <title>Delivery</title>
+</head>
+<body>
+
+     <!-- Navbar -->
+
+    <div class="boton">
+        <a href="{% url 'home' %}">Volver</a>
+    </div>
+
+   <style>
+    .boton a {
+                display: block;
+        width: 100px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 70;
+        border-radius: 10px;
+        margin: 15px;
+        padding: 15px 30px;
+        background-color: #961616;
+        color: #ffff;
+        text-decoration: none;
+    }
+   </style>
+   
+   <!-- Cards-->
+<div class="title-cards">
+		<h2>Locales de El Comilón</h2>
+	</div>
+<div class="container-card">
+	
+<div class="card">
+	<figure>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.0550358787073!2d-70.61862194961645!3d-33.499945207345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d00be4a5fa81%3A0xcd8eaf5b1d547f64!2sDuoc%20UC%3A%20Sede%20San%20Joaqu%C3%ADn!5e0!3m2!1ses-419!2scl!4v1657637060760!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</figure>
+	<div class="contenido-card">
+		<h3>San Joaquin</h3>
+		<p>Cerca de universidades y el metro San Joaquin, puedes encontrarnos en Vicuña Mackenna 4917.</p>
+		<a href="https://goo.gl/maps/fdY2SeFTcn83TTnx8">Ver ubicación</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26612.45953493733!2d-70.666922084375!3d-33.5128896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da9756cb0c17%3A0x68609cc64a90114c!2sEl%20Comil%C3%B3n!5e0!3m2!1ses-419!2scl!4v1657637105898!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</figure>
+	<div class="contenido-card">
+		<h3>Varas Mena 434</h3>
+		<p>En Varas Mena 434 también puedes pedir tu delivery cerca de tu hogar. </p>
+		<a href="https://goo.gl/maps/bwLeNc9xtfbp6znB9">Ver ubicación</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26612.015535319668!2d-70.63642098437496!3d-33.51433310000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d067e61ca5cb%3A0x827450af80d30374!2sEl%20Comil%C3%B3n!5e0!3m2!1ses-419!2scl!4v1657637117120!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</figure>
+	<div class="contenido-card">
+		<h3>Froilan Lagos Sepúlveda 1150 </h3>
+		<p>En la Florida también nos encontramos disponbles para delivery y retiro en local. </p>
+		<a href="https://goo.gl/maps/pDHExH8tBP8ZjXFt7">Ver ubicación</a>
+	</div>
+</div>
+</div>
+
+<footer class="pagina-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{% static 'core/img/logo.png' %}" alt="" style="width: 120px;">
+        </div>
+        <div class="col-sm-3">
+          <h5>Acerca de Nosotros</h5>
+          <ul style="text-align: center;">
+              <li><a href="#" style="text-decoration: none; color: white;">Informacion</a></li>
+              <li><a href="#" style="text-decoration: none; color: white;">Contactanos</a></li>
+              <li><a href="#" style="text-decoration: none; color: white;">Reseñas</a></li>
+          </ul>
+      </div>
+      <div class="col-sm-3">
+          <h5>Legal</h5>
+          <ul style="text-align: center;">
+              <li><a href="#" style="text-decoration: none; color: white;">Terminos de Servicio</a></li>
+              <li><a href="#" style="text-decoration: none; color: white;">Terminos de Uso</a></li>
+              <li><a href="#" style="text-decoration: none; color: white;">Politica de Privacidad</a></li>
+          </ul>
+      </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

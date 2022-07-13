@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block main_content %}
+<div class="container mt-2 mb-4">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card h-100">
+                    <img src="{% static 'core/img/product-4.jpg' %}" class="card-img-top" alt="{{p.idProducto}}">
+                <div class="card-body">
+                    <h5 class="card-title">Spaguetti Bolognesa/Crema</h5>
+                    <p class="card-text">Deliciosos Spaghetti bañados en la tradicional receta italiana de Salsa Bolognesa de la casa, con un toque de crema y queso parmesano.</p>
+                    <h5 class="card-title pricing-card-title precio">$4.999</h5>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-success agregar-carrito" data-id="1"><i class="fa-solid fa-plus"></i> AÑADIR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+
+

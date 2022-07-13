@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Productos{% endblock %}
+
+{% block main_content %}
+
+<div class="container mt-2 mb-4">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        {%for p in productos %}
+        <div class="col">
+            <div class="card h-100">
+                {% if p.imagen %}
+                    <img src="{{p.imagen.url}}" class="card-img-top" alt="{{p.idProducto}}">
+                {% else %}
+                    <img src="{% static 'crud/img/img_not_found.png' %}" class="card-img-top" alt="...">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{p.titulo}}</h5>
+                    <p class="card-text">{{p.descripcion}}</p>
+                    <h5 class="card-title pricing-card-title precio">${{p.precio_unitario}}</h5>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-success agregar-carrito" data-id="1"><i class="fa-solid fa-plus"></i> AÑADIR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
